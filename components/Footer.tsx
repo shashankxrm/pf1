@@ -36,7 +36,7 @@ const Footer = () => {
           Copyright © Shashank Reddy
         </p>
 
-        <div className="flex items-center md:gap-3 gap-6">
+        <div className="flex items-center md:gap-3 gap-6 mt-6 md:mt-0">
           {socialMedia.map((info) => (
             <a
               key={info.id}
