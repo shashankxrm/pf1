@@ -79,6 +79,10 @@
     @apply active:outline-none;
   }
 }
+#projects {
+  padding-top: 80px;
+  /* Adjust this value based on your header height */
+}
 
 @layer utilities {
   .heading {
