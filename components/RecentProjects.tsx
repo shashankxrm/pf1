@@ -3,7 +3,20 @@
 import { FaLocationArrow } from "react-icons/fa6";
 
 import { projects } from "@/data";
-import { PinContainer } from "@/components/ui/Pin";
+
+type Project = {
+  id: number;
+  title: string;
+  des: string;
+  img: string;
+  iconLists: string[];
+  link: string;
+  href: string; // Add the href property
+};
+
+
+import { PinContainer } from "./ui/Pin";
+import MagicButton from "./MagicButton";
 
 const RecentProjects = () => {
   return (
@@ -14,13 +27,13 @@ const RecentProjects = () => {
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((item) => (
-          <div
+          <a
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
-            key={item.id}
+            key={item.id} href={item.href} target="_blank"  // Add the href property
           >
             <PinContainer
-              title="/ui.aceternity.com"
-              href="https://twitter.com/mannupaaji"
+              title="Click"
+              href={item.href}
             >
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
@@ -73,9 +86,16 @@ const RecentProjects = () => {
                 </div>
               </div>
             </PinContainer>
-          </div>
+          </a>
         ))}
       </div>
+      <a href="https://github.com/shashankxrm?tab=repositories" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center mt-10">
+        <MagicButton
+          title="Show more Projects"
+          icon={<FaLocationArrow />}
+          position="right"
+        />
+      </a>
     </div>
   );
 };

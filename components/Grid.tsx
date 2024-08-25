@@ -1,5 +1,6 @@
 import { gridItems } from "@/data";
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
+import { link } from 'fs';
 
 const Grid = () => {
   return (
@@ -11,6 +12,7 @@ const Grid = () => {
             key={i}
             title={item.title}
             description={item.description}
+            
             // remove icon prop
             // remove original classname condition
             className={item.className}
