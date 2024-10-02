@@ -2,7 +2,7 @@ export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
   // { name: "Testimonials", link: "#testimonials" },
-  { name: "Resume", link: "https://storage.googleapis.com/resume-hosting/66d17731b0f80.pdf" },
+  { name: "Resume", link: "https://drive.google.com/drive/folders/1w0KDZpDpYCfWcOOqsuiP5I4beNJQxki7?usp=drive_link" },
   { name: "Contact", link: "#contact" },
 ];
 
