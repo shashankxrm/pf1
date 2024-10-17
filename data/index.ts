@@ -180,7 +180,7 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Developer Intern",
+    title: "Developer Intern - Celebrare",
     desc: "Contributed to a dynamic platform that creates designer cards and Invitations",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
