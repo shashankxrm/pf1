@@ -180,8 +180,8 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Open Source Contributor - Outreachy",
-    desc: "Contributed to various open-source projects involving various technologies.",
+    title: "Developer Intern",
+    desc: "Contributed to a dynamic platform that creates designer cards and Invitations",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
